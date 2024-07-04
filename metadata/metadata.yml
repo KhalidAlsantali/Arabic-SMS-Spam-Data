@@ -1,20 +1,30 @@
-name: Arabic SMS Spam Dataset
-description: A CSV dataset containing SMS messages and the sentiment
+dataset_name: Arabic SMS Spam Dataset
+format: csv
+description: This dataset contains Arabic SMS messages labeled as spam or not spam.
+columns:
+  - name: SMS
+    description: The content of the SMS message in Arabic.
+    data_type: string
+  - name: Sentiment
+    description: The sentiment label indicating if the message is spam (1) or not (0).
+    data_type: integer
+number_of_rows: 494
+license:
+  name: GNU General Public License v3.0
+  link: https://www.gnu.org/licenses/gpl-3.0.en.html
 contributors:
   - Khalid Alsantali
   - Omar Alsantali
   - Bandar Almutairi
   - Badr Alkhaldi
   - Sakher Alroque
-data:
-  name: Arabic_Spam.csv
-  description: A CSV dataset containing 495 SMS messages that are both spam and non-spam
-  format: csv
-  fields:
-    - name: SMS
-      description: the SMS message in full unmodified
-    - name: sentiment
-      description: whether the message is spam or not. 1 stands for spam, 0 stands for non-spam
-license:
-  - name: GNU General Public License v3.0
-    link: https://www.gnu.org/licenses/gpl-3.0.en.html
+keywords:
+  - Arabic
+  - SMS
+  - Spam detection
+language: Arabic
+created_date: 2023-03-24
+last_updated: 2024-03-08
+contact:
+  name: Khalid Alsantali
+  email: K.Alsantali@gmail.com
